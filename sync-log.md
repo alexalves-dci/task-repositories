@@ -22,3 +22,26 @@ What worked well:
 What confused me:
 - I did not remember using `origin` before, but now I understand that `git clone` had set it up automatically
 - I thought the VS Code update might affect my files, but it was only updating the server inside WSL
+
+Second phase:
+- I corrected the filename from `synch-log.md` to `sync-log.md`
+- I staged README.md and sync-log.md, then used `git status` to check that both files were ready to be committed
+- I used `git commit -m "1st Commit"` to save my first local snapshot
+- With `git status`, I saw that the working tree was clean
+- I used `git push -u origin main` to send my commits to GitHub and set up tracking between my local `main` and `origin/main`
+- I refreshed GitHub and saw both files there
+
+Third phase:
+- I edited README.md directly on GitHub, added a sentence and committed the change
+- I noticed that GitHub showed both sentences in one paragraph. I learned that Markdown needs an empty line between separate paragraphs
+- I used `git pull` to bring the new GitHub commit into my local repository
+- I checked README.md locally and saw the new sentence
+- With `git status`, I saw that my branch was up to date with `origin/main` and the working tree was clean
+
+What worked well:
+- My first push sent both files to GitHub
+- The pull brought my GitHub change into my local copy without errors
+
+What confused me:
+- I confused the repository name and my username with `origin`. Now I understand that `origin` is the saved nickname for the remote address
+- I confused push and pull. `git push` sends local commits to GitHub, while `git pull` brings changes from GitHub into my local branch
