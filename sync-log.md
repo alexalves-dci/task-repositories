@@ -45,3 +45,21 @@ What worked well:
 What confused me:
 - I confused the repository name and my username with `origin`. Now I understand that `origin` is the saved nickname for the remote address
 - I confused push and pull. `git push` sends local commits to GitHub, while `git pull` brings changes from GitHub into my local branch
+
+Fourth phase:
+- I updated sync-log.md locally in VS Code with my progress and what confused me
+- With `git status`, I saw that sync-log.md was modified but not staged
+- I used `git add sync-log.md` to prepare the changes
+- I used `git commit -m "Added 2nd phase"` to save a new snapshot locally
+- With `git status`, I saw that my branch was ahead of `origin/main` by one commit. This meant that the new commit was still only on my computer
+- I used `git push` to send that commit to GitHub
+- I refreshed GitHub and checked that my updated notes appeared there
+
+Reflection:
+- A remote is another repository that my local repository can exchange commits with. In this task, it is hosted on GitHub and its nickname is `origin`
+- `git push` sends my local commits to GitHub
+- `git pull` brings changes from GitHub into my local branch
+- As a Brazilian, I confused push with “puxar” because they sound similar! Now I remember: push means “empurrar” and pull means “puxar”
+- With test-repo, I created the repository on GitHub first, then used `git clone` to copy it locally and automatically set up `origin`
+- With task-repositories, I started locally with `git init`, added the remote myself and pushed my first commit to the empty GitHub repository
+- Both ways let me use push and pull afterward. The difference is how I started
